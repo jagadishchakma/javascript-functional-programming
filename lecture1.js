@@ -6,7 +6,7 @@ function host() {
 }
 
  host()();
- 
+
 // two example
 function greetings(msg){
      function  hello(name) {
@@ -16,3 +16,13 @@ function greetings(msg){
 }
 
 var one = greetings('Good morning.')('Jagadish chakma, ');
+
+// three 
+
+function three(hello) {
+    return function(name) {
+        console.log('Hello ' + name + hello);
+    }
+}
+
+three('Good night.')('Namita Chakma ');
